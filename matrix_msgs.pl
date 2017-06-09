@@ -101,7 +101,7 @@ sub file_read_line {
 		chomp $row;
 		close $fd;
 	} else {
-		irc_log("failed to open file '" . $filename . "' for reading");
+		irc_log("failed to open file '$filename' for reading");
 	}
 
 	return $row;
@@ -114,7 +114,7 @@ sub file_write_line {
 		print $fd $line;
 		close $fd;
 	} else {
-		irc_log("failed to open file '" . $filename . "' for writing");
+		irc_log("failed to open file '$filename' for writing");
 	}
 
 	return;
