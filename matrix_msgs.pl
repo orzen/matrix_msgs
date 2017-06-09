@@ -102,6 +102,7 @@ sub file_read_line {
 		close $fd;
 	} else {
 		irc_log("failed to open file '$filename' for reading: $!");
+		return;
 	}
 
 	return $row;
